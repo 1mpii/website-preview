@@ -25,59 +25,68 @@ body {
 body {
 	height: 100vh;
 	width: 100vw;
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: center; */
 	overflow: hidden;
 }
 
 /* --------centered menu-------- */
 .menu__wrapper {
 	z-index: 3;
-	position: relative;
 	position: fixed;
+display: grid;
+grid-template-columns: 192px 100px;
+column-gap: 2rem;
 }
 
-.width,
-.height {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: white;
-	position: absolute;
-	top: 0;
-	transform: translate(-50%, -50%);
-	border: 0.5px solid var(--text-color);
+	.menu__wrapper {
+width: 340px;
+top: 1rem;
+    left: 1rem;
+
 }
 
-.width {
-	width: 100vw;
+.menu__text {
+		  font-family: var(--tertiary-font);
+			grid-row: 1/3;
+			cursor: zoom-in;
 }
 
-.height {
-	height: 100vh;
+.menu__text:hover p {
+	opacity: 1;
+}
+
+.menu__text:hover a {
+	text-decoration: underline;
+text-underline-offset: 6px;
+text-decoration-thickness: 0.9px;
+text-decoration-color: #e6ff0d;
+}
+
+.menu__text p {
+	opacity: 0;
+	transition: 0.3ms linear;
+	margin:7px 0;
+	text-align: justify;
 }
 
 .menu__items {
-	position: fixed;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	display: grid;
-  font-family: var(--tertiary-font);
+	display: inline-flex;
+flex-direction: row;
+grid-row: 1;
+}
+
+.menu__items a+p {
+	margin: 0 4px;
 }
 
 .menu__items a {
-	margin: -0.5px auto;
 	text-decoration: none;
 	color: var(--text-color);
-	text-transform: uppercase;
-	/* font-weight: 600; */
-	background-color: var(--white-color);
-	border: 1px solid var(--text-color);
-  border-radius: 1rem;
-  width: min-content;
-  padding: 0.15rem 0.55rem;
+	font-family: var(--tertiary-font);
+	cursor: default;
 }
 
 .menu__items a:hover {
@@ -86,17 +95,13 @@ body {
 }
 
 /* --------background img-gallery-------- */
-.img-gallery__wrapper {
-	width: 150%;
-}
 
 .img-gallery__wrapper img {
-	opacity: 0;
-	width: 260px;
+width: 100%;
 	height: auto;
+	transform: translateY(-150px);
 }
 
-.img-gallery__wrapper img:hover {
-	opacity: 1;
-	transition: 0.15s linear;
+.img-gallery__wrapper {
+width: 100%
 }
