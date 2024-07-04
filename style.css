@@ -57,12 +57,8 @@ body {
 .menu__text:hover p {
 	opacity: 1;
 }
-
-.menu__text:hover a {
-	text-decoration: underline;
-	text-underline-offset: 6px;
-	text-decoration-thickness: 0.9px;
-	text-decoration-color: #e6ff0d;
+.menu__text p:nth-of-type(1) {
+color:  #8b17ff;
 }
 
 .menu__text p {
@@ -79,7 +75,8 @@ body {
 }
 
 .menu__items a + p {
-	margin: 0 4px;
+
+	margin: 0 4px;	
 }
 
 .menu__items a {
