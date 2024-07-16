@@ -54,9 +54,10 @@ body {
 	cursor: zoom-in;
 }
 
-.menu__text:hover p {
+.menu__text:hover p, .menu__text:focus p, .menu__text:active p  {
 	opacity: 1;
 }
+
 .menu__text p:nth-of-type(1) {
 color:  #8b17ff;
 }
@@ -86,7 +87,7 @@ color:  #8b17ff;
 	cursor: default;
 }
 
-.menu__items a:hover {
+.menu__items a:hover, .menu__text:focus, .menu__text:active {
 	background-color: var(--text-color);
 	color: var(--white-color);
 }
