@@ -14,11 +14,16 @@
 		<meta name="description" content="(c) 2024" />
 
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://juanpablohernandezgutierrez.com/" />
+		<meta
+			property="og:url"
+			content="https://juanpablohernandezgutierrez.com/"
+		/>
 		<meta property="og:title" content="Juan Pablo Hernández Gutiérrez" />
 		<meta property="og:description" content="(c) 2024" />
 		<meta property="og:image"
 		content=“https://juanpablohernandezgutierrez.com/favicon.png”>
+
+		<script src="script.js" async></script>
 	</head>
 
 	<body>
@@ -27,27 +32,29 @@
 		</main>
 		<nav class="menu__wrapper">
 			<span class="menu__text">
-				<a role="button" tabIndex="0">Juan Pablo Hernández Gutiérrez</a>
-				<p>...</p>
-				<p>
-					is an artist living in Tiohtià:ke (Montreal). He studied painting and
-					drawing at Concordia University. His work explores misinterpretation,
-					precariousness, transformation and adaptation of materials, images and
-					objects.
-				</p>
+				<a title="about..." onclick="displayBio()">Juan Pablo Hernández Gutiérrez</a>
+				<div id="bio" class="hide">
+					<!-- <p>...</p> -->
+					<p>
+						is an artist living in Tiohtià:ke (Montreal). He studied painting
+						and drawing at Concordia University. His work explores
+						misinterpretation, precariousness, transformation and adaptation of
+						materials, images and objects.
+					</p>
+				</div>
 			</span>
 			<div class="menu__items">
 				<a
 					target="_blank"
 					href="https://www.instagram.com/juampii.chukynuny/"
-					title="instagram: @juampii.chukynuny"
+					title="@juampii.chukynuny"
 					>instagram</a
 				>
 				<p>/</p>
 				<a
 					target="_blank"
 					href="mailto:flacohernandezgutierrez@gmail.com"
-					title="email: flacohernandezgutierrez@gmail.com"
+					title="flacohernandezgutierrez@gmail.com"
 					>email</a
 				>
 			</div>
