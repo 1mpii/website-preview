@@ -22,34 +22,185 @@
 		<meta property="og:description" content="(c) 2024" />
 		<meta property="og:image"
 		content=“https://juanpablohernandezgutierrez.com/favicon.png”>
-
-		<script src="script.js" async></script>
 	</head>
 
 	<body>
-		<main class="img-gallery__wrapper">
-			<img src="images/Juampi-small.jpg" title="" alt="" />
-			<img src="images/Juampi-small.jpg" title="" alt="" />
-		</main>
-		<nav class="menu__wrapper">
-			<span class="menu__text">
-				<a id="artist" title="about..." onclick="displayBio()">Juan Pablo Hernández Gutiérrez</a>
-				<div id="bio" class="hide">
-					<!-- <p>...</p> -->
-					<p>
-						is an artist living and working in Tiohtià:ke (Montreal).
-					</p>
-				</div>
-			</span>
-			<div class="menu__items">
-				
-				<a
-					target="_blank"
-					href="mailto:flaco.hernandez.gutierrez@gmail.com"
-					title="flaco.hernandez.gutierrez@gmail.com"
-					>email</a
-				>
+		<header>
+			<span
+				><p>Juan Pablo Hernández Gutiérrez</p>
+				<p class="hide">lives and works in Tiohtià:ke (Montréal).</p></span
+			>
+			<a
+				target="_blank"
+				href="mailto:flaco.hernandez.gutierrez@gmail.com"
+				title="flaco.hernandez.gutierrez@gmail.com"
+				>flaco.hernandez.gutierrez@gmail.com</a
+			>
+		</header>
+
+		<main>
+			<div class="left-column">
+				<nav class="tab__container">
+					<button class="tabitem" onclick="openTab(event, 'tab-one')">
+						2025
+					</button>
+					<button class="tabitem" onclick="openTab(event, 'tab-two')">
+						2023/2024
+					</button>
+					<button class="tabitem" onclick="openTab(event, 'tab-three')">
+						2021/2022
+					</button>
+				</nav>
 			</div>
-		</nav>
+
+			<div class="right-column">
+				<div id="tab-one" class="tabcontent">
+					<img
+						src="images/2025/JuampiTubb-1.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-2.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-3.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-4.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-5.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-6.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-7.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-8.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-9.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-10.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-11.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-12.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2025/JuampiTubb-13.jpg"
+						alt="2025, Juan Pablo Hernández Gutiérrez"
+					/>
+				</div>
+
+				<div id="tab-two" class="tabcontent">
+					<img
+						src="images/2023-2024/JPEG_Juampi_9.jpg"
+						alt="2023-2024, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2023-2024/JPEG_Juampi_7.jpg"
+						alt="2023-2024, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2023-2024/JPEG_Juampi_6.jpg"
+						alt="2023-2024, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2023-2024/JPEG_Juampi_10.jpg"
+						alt="2023-2024, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2023-2024/JPEG_Juampi_8.jpg"
+						alt="2023-2024, Juan Pablo Hernández Gutiérrez"
+					/>
+					
+					<img
+						src="images/2023-2024/JPEG_Juampi_5.jpg"
+						alt="2023-2024, Juan Pablo Hernández Gutiérrez"
+					/>
+				</div>
+
+				<div id="tab-three" class="tabcontent">
+					<img
+						src="images/2021-2022/JPEG_Juampi_1.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_2.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_3.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_4.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_5.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_6.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_7.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_8.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_9.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_10.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_11.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_12.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/><img
+						src="images/2021-2022/JPEG_Juampi_13.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+					<img
+						src="images/2021-2022/JPEG_Juampi_14.jpg"
+						alt="2021-2022, Juan Pablo Hernández Gutiérrez"
+					/>
+				</div>
+			</div>
+		</main>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js"></script>
 	</body>
 </html>
